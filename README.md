@@ -16,5 +16,6 @@ hit-song-prediction/
 │   └── spotify_data.csv       # Original dataset
 ├── notebooks/
 │   └── sportify_analysis.ipynb         # Complete analysis
+├── .gitignore
 ├── requirements.txt
 └── README.md
