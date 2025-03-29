@@ -92,7 +92,7 @@ Build Streamlit dashboard
 
 
 
-## 🚀 Quick Start
+### 🚀 Quick Start
 # Clone repository
 ```
 git clone https://github.com/SmitThakare/hit-song-prediction-spotify.git
