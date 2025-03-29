@@ -10,3 +10,11 @@ cd hit-song-prediction-spotify
 pip install -r requirements.txt
 jupyter notebook
 
+
+hit-song-prediction/
+├── data/
+│   └── spotify_data.csv       # Original dataset
+├── notebooks/
+│   └── sportify_analysis.ipynb         # Complete analysis
+├── requirements.txt
+└── README.md
