@@ -19,6 +19,7 @@ This machine learning project analyzes Spotify song data to:
 **Source:** [Kaggle Dataset](https://www.kaggle.com/code/rajg28/sportify-data-analysis) (File: `data.csv`)
 
 ### Feature Descriptions
+```
 | Feature | Description | Range |
 |---------|-------------|-------|
 | `acousticness` | Confidence measure of acoustic content | 0-1 |
@@ -27,8 +28,9 @@ This machine learning project analyzes Spotify song data to:
 | `loudness` | Overall loudness in dB | -60-0 |
 | `valence` | Musical positivity | 0-1 |
 | `target` | Hit classification label | 0-1 |
-
+```
 ### 📂 Repository Structure
+```
 hit-song-prediction/
 ├── data/
 │   └── spotify_data.csv       # Original dataset
@@ -37,10 +39,10 @@ hit-song-prediction/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 
 ### Key Learnings
-##Data Processing
+## Data Processing
 Improved accuracy from 63.39% → 78.22% through:
 
 Outlier removal (IQR method)
@@ -51,10 +53,11 @@ Stratified sampling (60:40 class balance)
 
 ## Feature Engineering
 # Sample engineered features
+```
 df['danceability_energy'] = df['danceability'] * df['energy']
 df['log_tempo'] = np.log1p(df['tempo'])
 df['energy_squared'] = df['energy']**2
-
+```
 # Model Performance
 Model	Target	Metric	Score
 Logistic Regression	Hit Prediction	Accuracy	0.7822
@@ -91,19 +94,24 @@ Build Streamlit dashboard
 
 ## 🚀 Quick Start
 # Clone repository
+```
 git clone https://github.com/SmitThakare/hit-song-prediction-spotify.git
 cd hit-song-prediction-spotify
+```
 
 # Create environment (recommended)
+```
 conda create -n spotify python=3.8
 conda activate spotify
-
+```
 # Install dependencies
+```
 pip install -r requirements.txt
-
+```
 # Run analysis
+```
 jupyter notebook notebooks/sportify_analysis.ipynb
-
+```
 ### 🤝 How to Contribute
 Fork the repository
 
